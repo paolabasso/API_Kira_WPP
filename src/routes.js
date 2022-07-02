@@ -1,6 +1,6 @@
 import { Router } from "express";
 
-router = express.Router();
+router = Router();
 
 router.post("/calendar",(req, res) => {})
 router.post("/menstruation",(req, res) => {})
