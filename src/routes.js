@@ -1,9 +1,15 @@
 import { Router } from "express";
+import { registerController } from "./controllers/registerControllers.js";
+import { calendarController } from "./controllers/calendarFertilityControllers.js";
 
-router = Router();
+const router = Router();
 
-router.post("/calendar",(req, res) => {})
-router.post("/menstruation",(req, res) => {})
-router.post("/premenstruation",(req, res) => {})
-router.post("/ovulation",(req, res) => {})
-router.post("/preovulation",(req, res) => {})
+router.get("/", (req, res) => {
+    res.json({"message":"to funcionando"})
+})
+
+router.post("/register_calendar", registerController)
+router.post("/calendar_fertility", calendarController)
+
+
+export default router
