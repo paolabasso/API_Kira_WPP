@@ -1,6 +1,9 @@
 import axios from "axios";
+import dotenv from 'dotenv';
 
-const token = "EAAKNRGmfe9IBAI7TT8Nw7qx70CHNYXxea8mo5X4gUlZCZA9X7TrbClNpbQiN9wS3fdEzo7s4xY0tuDmheZBn0P5pzOuMENdxuHZBtLaHzj22UZBM58jWZC0tJULczZCDgHzGu0ncKAMPQKu59pHApCUyC2LrcXb6WVUnfxwmocMrQuK32ZAWdyoqjCz1qHd0IGM0ZAJgmaJ7Ej0uEblFUFMpZA";
+dotenv.config()
+
+const token = process.env.TOKEN
 
 const sendMessageCalendar = async (data) => {
     try{

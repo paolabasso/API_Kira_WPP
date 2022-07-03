@@ -1,0 +1,20 @@
+//formato da requisição para testar
+//opcoes preparadas com template para o calendar_fertility: menstruation, pre_menstruation, ovulation
+{
+    name: "",
+    phone: 5511999320279,
+    calendar_fertility: ""
+}
+
+//formato da requisição que vai para a API do wpp
+{
+    "messaging_product": "whatsapp",
+    "to": "5511999320279",
+    "type": "template",
+    "template": {
+        "name": "namedotemplate",
+        "language": {
+            "code": "pt_BR"
+        }
+    }
+}
